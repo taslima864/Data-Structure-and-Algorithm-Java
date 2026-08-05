@@ -2,7 +2,7 @@ package Patterns;
 
 import java.util.Scanner;
 
-public class PrintStar {
+public class Pattern1 {
   public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);

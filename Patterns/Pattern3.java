@@ -2,7 +2,7 @@ package Patterns;
 
 import java.util.Scanner;
 
-public class PrintPyramidStars {
+public class Pattern3 {
 
   public static void printPattern(int n) {
 

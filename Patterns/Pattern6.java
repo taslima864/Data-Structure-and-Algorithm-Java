@@ -2,21 +2,21 @@ package Patterns;
 
 import java.util.*;
 
-public class Pattern5 {
+public class Pattern6 {
   public static void solution(int n) {
     for (int i = 0; i < n; i++) {
       // space
-      for (int j = 0; j < n - i + 1; j++) {
+      for (int j = 0; j < n - i; j++) {
         System.out.print(" ");
       }
 
       // stars
-      for (int j = 0; j < 2 * i + 1; j++) {
+      for (int j = 0; j < i; j++) {
         System.out.print("*");
       }
 
       // space
-      for (int j = 0; j < n - i + 1; j++) {
+      for (int j = 0; j < n - i; j++) {
         System.out.print(" ");
       }
       System.out.println("");
@@ -31,5 +31,4 @@ public class Pattern5 {
     solution(n);
     sc.close();
   }
-
 }
