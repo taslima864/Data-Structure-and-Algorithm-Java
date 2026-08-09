@@ -1,7 +1,5 @@
 package Bit_Manipulation;
 
-import java.util.*;
-
 public class OddEven {
   public static void solution(int n) {
     int bitMask = 1;
