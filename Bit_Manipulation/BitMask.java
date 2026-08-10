@@ -21,13 +21,19 @@ public class BitMask {
   public static int solution3(int n, int i) {
     int bitMask = ~(1 << i);
     return n & bitMask;
+  }
 
+  // Update ith bit
+  public static int solution4(int n, int i, int newBit) {
+    int BitMask = newBit << i;
+    return n | BitMask;
   }
 
   public static void main(String args[]) {
     // System.out.print(solution(13, 1));
     // System.out.println(solution2(10, 2));
-    System.out.println(solution3(10, 1));
+    // System.out.println(solution3(10, 1));
+    System.out.println(solution4(10, 2, 1));
 
   }
 }
