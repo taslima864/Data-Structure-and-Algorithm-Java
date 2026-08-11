@@ -45,13 +45,19 @@ public class BitMask {
 
   }
 
+  // check if Power of Two
+  public static boolean solution7(int n) {
+    return (n & (n - 1)) == 0;
+  }
+
   public static void main(String args[]) {
     // System.out.print(solution(13, 1));
     // System.out.println(solution2(10, 2));
     // System.out.println(solution3(10, 1));
     // System.out.println(solution4(13, 2, 1));
     // System.out.println(solution5(15, 2));
-    System.out.println(solution6(10, 2, 4));
+    // System.out.println(solution6(10, 2, 4));
+    System.out.println(solution7(12));
 
   }
 }
