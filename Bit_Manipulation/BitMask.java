@@ -36,12 +36,22 @@ public class BitMask {
 
   }
 
+  // clear range of bits
+  public static int solution6(int n, int i, int j) {
+    int a = ((~0) << (j + 1));
+    int b = (1 << i) - 1;
+    int bitMask = a | b;
+    return n & bitMask;
+
+  }
+
   public static void main(String args[]) {
     // System.out.print(solution(13, 1));
     // System.out.println(solution2(10, 2));
     // System.out.println(solution3(10, 1));
     // System.out.println(solution4(13, 2, 1));
-    System.out.println(solution5(15, 2));
+    // System.out.println(solution5(15, 2));
+    System.out.println(solution6(10, 2, 4));
 
   }
 }
