@@ -50,6 +50,18 @@ public class BitMask {
     return (n & (n - 1)) == 0;
   }
 
+  // Count set bits in a number
+  public static int solution8(int n) {
+    int count = 0;
+    while (n > 0) {
+      if ((n & 1) != 0) {
+        count++;
+      }
+      n = n >> 1;
+    }
+    return count;
+  }
+
   public static void main(String args[]) {
     // System.out.print(solution(13, 1));
     // System.out.println(solution2(10, 2));
@@ -57,7 +69,8 @@ public class BitMask {
     // System.out.println(solution4(13, 2, 1));
     // System.out.println(solution5(15, 2));
     // System.out.println(solution6(10, 2, 4));
-    System.out.println(solution7(12));
+    // System.out.println(solution7(12));
+    System.out.println(solution8(21));
 
   }
 }
