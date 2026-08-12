@@ -70,7 +70,7 @@ public class BitMask {
     // System.out.println(solution5(15, 2));
     // System.out.println(solution6(10, 2, 4));
     // System.out.println(solution7(12));
-    System.out.println(solution8(21));
+    System.out.println(solution8(13));
 
   }
 }
