@@ -13,8 +13,19 @@ public class Problem1 {
     System.out.print(n + " ");
   }
 
+  public static int solution2(int n) {
+
+    if (n == 1) {
+      return 1;
+    }
+
+    int snm1 = solution2(n - 1);
+    int Sn = n + snm1;
+    return Sn;
+  }
+
   public static void main(String[] args) {
-    int n = 10;
-    solution(n);
+    // System.out.println(solution(10));
+    System.out.println(solution2(5));
   }
 }
