@@ -1,7 +1,9 @@
 package Recursion;
 
 public class removeDuplicates {
-  public static void removeDuplicates(String str, int idx, StringBuilder newStr, boolean map[]) {
+  public static void removeDuplicates(String str, int idx,
+      StringBuilder newStr,
+      boolean map[]) {
     if (idx == str.length()) {
       System.out.println(newStr);
       return;
